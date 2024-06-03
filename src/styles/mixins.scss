@@ -1,0 +1,157 @@
+@import 'variables';
+
+//text styles
+@mixin h1 {
+    font-size: 99px;
+    font-weight: 900;
+    line-height: 119%;
+    font-family: $font-mplus;
+}
+
+@mixin h2 {
+    font-size: 54px;
+    font-weight: 500;
+    line-height: auto;
+    font-family: $font-mplus; 
+}
+
+@mixin h3 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: auto;
+    font-family: $font-mplus; 
+}
+
+@mixin h4 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: auto;
+    font-family: $font-mplus;
+}
+
+@mixin h5 {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: auto;
+    font-family: $font-mplus;
+}
+
+@mixin h6 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: auto;
+    font-family: $font-mplus;
+}
+
+@mixin text_small {
+    font-size: 16.2px;
+    font-weight: 400;
+    line-height: 163%;
+    font-family: $font-mplus;
+}
+
+@mixin text_smallBold {
+    font-size: 16.2px;
+    font-weight: 700;
+    line-height: 163%;
+    font-family: $font-mplus;
+}
+
+@mixin text_regular {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 163%;
+    font-family: $font-mplus;
+}
+
+@mixin text_regularBold {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 163%;
+    font-family: $font-mplus;
+}
+
+@mixin text_medium {
+    font-size: 19.8px;
+    font-weight: 400;
+    line-height: 163%;
+    font-family: $font-mplus;
+}
+
+@mixin text_mediumBold {
+    font-size: 19.8px;
+    font-weight: 800;
+    line-height: 163%;
+    font-family: $font-mplus;
+}
+
+@mixin text_large {
+    font-size: 21.6px;
+    font-weight: 400;
+    line-height: 163%;
+    font-family: $font-mplus;
+}
+
+@mixin text_largeBold {
+    font-size: 21.6px;
+    font-weight: 800;
+    line-height: 163%;
+    font-family: $font-mplus;
+}
+
+@mixin title_large {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 208%;
+    letter-spacing: 4px;
+    font-family: $font-mplus;
+}
+
+@mixin title_medium {
+    font-size: 14.4px;
+    font-weight: 800;
+    line-height: 208%;
+    letter-spacing: 4px;
+    font-family: $font-mplus;
+}
+
+@mixin title_small {
+    font-size: 12.6px;
+    font-weight: 800;
+    line-height: 208%;
+    letter-spacing: 6px;
+    font-family: $font-mplus;
+}
+
+@mixin quote_large {
+    font-size: 36px;
+    line-height: 177%;
+    font-weight: 800;
+    font-style: italic;
+    font-family: $font-noticia;
+}
+
+@mixin quote_small {
+    font-size: 22.5px;
+    line-height: 177%;
+    font-weight: 400;
+    font-style: italic;
+    font-family: $font-noticia;
+}
+
+@mixin misc_nav {
+    font-family: $font-mplus;
+    font-size: 14.4px;
+    font-weight: 800;
+    line-height: 208%;
+    letter-spacing: 2px;
+}
+
+@mixin misc_nav_footer {
+    font-family: $font-mplus;
+    font-size: 12.6px;
+    font-weight: 700;
+    line-height: 223%;
+    letter-spacing: 1px;
+}
+
