@@ -155,3 +155,11 @@
     letter-spacing: 1px;
 }
 
+@mixin misc_text_button {
+    font-family: $font-mplus;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: auto;
+    letter-spacing: 2px;
+}
+

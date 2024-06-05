@@ -1,6 +1,6 @@
 import '@/styles/index.scss';
 import { M_PLUS_1p, Noticia_Text } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 
 const mplus = M_PLUS_1p({ 
   subsets: ["latin"], 
@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${mplus.className} ${noticia.className}`}>{children}</body>
+      <body className={`${mplus.variable} ${noticia.variable}`}>{children}</body>
     </html>
   );
 }

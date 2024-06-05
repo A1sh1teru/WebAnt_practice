@@ -1,0 +1,70 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.homeActivityContainer {
+    background-color: $secondary-300-color;
+    padding: 252px 147px 306px 147px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.topContainerTitle {
+    @include title_small;
+    color: $primary-color;
+}
+
+.topContainerDescription {
+    @include h5;
+    color: $white-color;
+}
+
+.botContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.cardStyle1 {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 72px 36px 74px 36px;
+}
+
+.cardNumberStyle1 {
+    @include title_large;
+    color: $white-color;
+}
+
+.cardNumberStyle2 {
+    @include title_large;
+    color: $primary-color;
+}
+
+.cardTitle {
+    @include h5;
+    color: $white-color;
+}
+
+.cardDescription {
+    @include text_small;
+    color: $white-color;
+}
+
+.cardStyle2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 72px 36px 74px 36px;
+    border: 1px solid rgba($color: #FFFFFF, $alpha: 0.2)
+}

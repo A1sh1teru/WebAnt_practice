@@ -1,0 +1,90 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.homeBenefitsContainer {
+    padding: 108px 147px 180px 147px;
+    display: flex;
+    gap: 126px;
+}
+
+.leftSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 71px;
+}
+
+.topTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.upperText {
+    @include title_small;
+    color: $primary-color;
+}
+
+.textSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.title {
+    @include h3;
+    color: $secondary-400-color;
+}
+
+.description {
+    @include text_regularBold;
+    color: $secondary-400-color;
+}
+
+.botSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.botTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature {
+    @include text_regular;
+    color: $secondary-400-color;
+}
+
+.btnContainer {
+    display: flex;
+    background-color: $primary-color;
+    border-radius: 36px;
+    border: 1px solid rgba($color: #5E239D, $alpha: 0.10);
+    max-width: fit-content;
+    padding: 18px 45px;
+}
+
+.btnText {
+    @include misc_text_button;
+    color: $white-color;
+}
+
+.rightSubContainer {
+    position: relative;
+}
+
+.backImg {
+    // position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    padding-left: 98px;
+}
+
+.frontImg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

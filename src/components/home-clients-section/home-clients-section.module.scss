@@ -1,0 +1,77 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.homeClientsContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 147px 144px 147px;
+    background-color: $white-color;
+    gap: 118px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.topText {
+    @include title_small;
+    color: $primary-color;
+}
+
+.botText {
+    @include h3;
+    color: $headers-color;
+}
+
+.logosContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 685px;
+    gap: 40px;
+}
+
+.logosTitle {
+    @include title_small;
+    color: $headers-color;
+    padding: 45px 0;
+}
+
+.logosImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 128px;
+    grid-row-gap: 110px;
+}
+
+.leftTextContainer {
+    position: absolute;
+    left: 0;
+    bottom: -72px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 144px 102px 157px 147px;
+    background-color: $secondary-400-color;
+    z-index: 1;
+    max-width: 705px;
+}
+
+.leftTextContainerTitle {
+    @include h4;
+    color: $primary-color;
+}
+
+.leftTextSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.leftTextSubContainerDescription {
+    @include text_regular;
+    color: $white-color;
+}

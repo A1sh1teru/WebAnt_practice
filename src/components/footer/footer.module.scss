@@ -1,0 +1,167 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.footerSection {
+    background-color: $secondary-400-color;
+    padding: 126px 147px 124px 147px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.topContainer {
+    display: flex;
+    gap: 128px;
+}
+
+.logoSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.logoTitle {
+    font-family: $font-mplus;
+    font-weight: 900;
+    font-size: 24;
+    line-height: 178.2%;
+    letter-spacing: 2px;
+    color: $white-color;
+}
+
+.logoDescription {
+    @include text_small;
+    color: $white-color;
+}
+
+.navSubContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 86px;
+}
+
+.menuAndServicesContainer {
+    display: flex;
+    gap: 36px;
+}
+
+.menuSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.menuTitle {
+    @include title_small;
+    color: $white-color;
+    border-bottom: solid 1px;
+    border-bottom-color: $primary-color;
+    padding-bottom: 10px;
+    max-width: fit-content;
+}
+
+.menuList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.listItem {
+    color: $white-color;
+}
+
+.servicesSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.servicesTitle {
+    @include title_small;
+    color: $white-color;
+    border-bottom: solid 1px;
+    border-bottom-color: $primary-color;
+    padding-bottom: 10px;
+    max-width: fit-content;
+}
+
+.servicesList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contactUsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.contactUsTitle {
+    @include title_small;
+    color: $white-color;
+    border-bottom: solid 1px;
+    border-bottom-color: $primary-color;
+    padding-bottom: 10px;
+    max-width: fit-content;
+}
+
+.contactUsSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.contactUsMailContainer {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.mailText {
+    @include text_small;
+    color: $white-color;
+}
+
+.contactUsPhoneContainer {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.phoneText {
+    @include text_small;
+    color: $white-color;
+}
+
+.followUsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.followUsTitle {
+    @include title_small;
+    color: $white-color;
+    border-bottom: solid 1px;
+    border-bottom-color: $primary-color;
+    padding-bottom: 10px;
+    max-width: fit-content;
+}
+
+.socialsContainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.botText {
+    display: flex;
+    justify-content: center;
+    color: $white-color;
+    font-family: $font-mplus;
+    font-size: 11.7;
+    font-weight: 400;
+    line-height: 163.4%;
+
+}

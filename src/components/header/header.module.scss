@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoTitle {
+    color: $white-color;
+    font-family: $font-mplus;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 178%;
+    letter-spacing: 2px;
+}
+
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    gap: 98px;
+}
+
+.phoneContainer {
+    display: flex;
+    gap: 18px;
+}
+
+.phoneText {
+    @include misc_nav;
+    color: $white-color;
+}

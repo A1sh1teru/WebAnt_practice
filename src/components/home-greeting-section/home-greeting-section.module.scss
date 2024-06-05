@@ -1,0 +1,82 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.homeGreetingContainer {
+    position: relative;
+    padding: 60px 120px 126px 0;
+}
+
+.headerContainer {
+    padding-left: 147px;
+}
+
+.midContainer {
+    padding-left: 147px;
+    padding-top: 144px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.midLeftContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.upperTitle {
+    @include title_medium;
+    color: $white-color;
+}
+
+.mainTitle {
+    @include h1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainTitleTop {
+    color: $white-color;
+    font-weight: 900;
+}
+
+.mainTitleBot {
+    color: $primary-color;
+}
+
+.midRightContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.rightText {
+    @include title_small;
+    color: $white-color;
+    writing-mode: vertical-rl;
+}
+
+.botContainer {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+    border: 1px solid rgba($color: #FFFFFF, $alpha: 0.25);
+    padding: 36px 39px 36px 148px;
+    max-width: fit-content;
+}
+
+.botText {
+    @include text_regular;
+    color: $white-color;
+}
+
+.botArrowContainer {
+    padding: 17px;
+    border: 1px solid $white-color;
+    border-radius: 100px;
+    max-width: 48px;
+    max-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(196, 196, 196, 0.05);
+}

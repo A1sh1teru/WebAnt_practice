@@ -1,0 +1,62 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.homeNewsContainer {
+    padding: 126px 414px 141px 413px;
+}
+
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+}
+
+.textSubContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+}
+
+.title {
+    @include h3;
+    color: $headers-color;
+}
+
+.description {
+    @include h6;
+    color: $main-text-color;
+}
+
+.actionSubContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 46px;
+}
+
+.mailText {
+    @include title_large;
+    color: $grey-text-color;
+}
+
+.subscribeContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.subscribeText {
+    @include title_small;
+    color: $primary-color;
+}
+
+.arrowContainer {
+    width: 27px;
+    height: 27px;
+    padding: 13.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: $primary-color;
+    border-radius: 100px;
+}

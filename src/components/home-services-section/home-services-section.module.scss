@@ -1,0 +1,91 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.homeServicesContainer {
+    padding: 180px 191px 54px 147px;
+    display: flex;
+    flex-direction: column;
+    color: $white-color;
+    position: relative;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 54px;
+}
+
+.topTitle {
+    @include title_small;
+    color: $primary-color;
+}
+
+.botTitle {
+    @include h3;
+    color: $headers-color;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 74px;
+    grid-row-gap: 64px;
+    padding-bottom: 118px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTitle {
+    padding-top: 18px;
+    padding-bottom: 9px;
+    @include h6;
+    color: $headers-color;
+}
+
+.cardDescription {
+    @include text_small;
+    color: $main-text-color;
+}
+
+.quoteContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    margin-right: 89px;
+}
+
+.quoteWrapper {
+    background-color: $secondary-100-color;
+    padding: 81px 161px 81px 98px;
+}
+
+.quote {
+    @include quote_small;
+    color: $white-color;
+}
+
+.quoteAuthor {
+    @include text_regularBold;
+    color: $primary-color;
+    padding-left: 98px;
+}
+
+.dash {
+    @include text_regularBold;
+    color: $headers-color;
+}
+
+.authorCompany {
+    @include text_regular;
+    color: $headers-color;
+}
+
+.imageContainer {
+    position: absolute;
+    bottom: 0;
+    right: 147px;
+}
