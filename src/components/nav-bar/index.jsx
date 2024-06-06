@@ -10,7 +10,7 @@ export default function Navbar() {
                     <Link href='/' className={styles.link}>Home</Link>
                 </li>
                 <li className={styles.navbarItem}>
-                    Services
+                    <Link href='/services' className={styles.link}>Services</Link>
                 </li>
                 <li className={styles.navbarItem}>
                     Work

@@ -1,0 +1,131 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.homeServicesContainer {
+    // padding: 180px 191px 54px 147px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #150433;
+    position: relative;
+    z-index: -3;
+}
+
+.map {
+    position: absolute;
+    z-index: -2;
+    top: 123px;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 54px;
+    padding-top: 298px;
+    padding-right: 441px;
+    padding-left: 441px;
+}
+
+.topTitle {
+    @include title_small;
+    color: $primary-color;
+    padding-bottom: 12px;
+}
+
+.midTitle {
+    @include h3;
+    color: $white-color;
+    padding-bottom: 23px;
+}
+
+.botTitle {
+    @include text_regularBold;
+    color: $white-color;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 74px;
+    grid-row-gap: 64px;
+    padding: 0 150px 182px 150px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTitle1 {
+    padding-top: 18px;
+    padding-bottom: 9px;
+    @include h6;
+    color: $tetriary-color;
+}
+
+.cardDescription1 {
+    @include text_small;
+    color: $white-color;
+}
+
+.cardTitle2 {
+    padding-top: 18px;
+    padding-bottom: 9px;
+    @include h6;
+    color: $primary-color;
+}
+
+.cardDescription2 {
+    @include text_small;
+    color: $white-color;
+}
+
+.cardTitle3 {
+    padding-top: 18px;
+    padding-bottom: 9px;
+    @include h6;
+    color: #F67110;
+}
+
+.cardDescription3 {
+    @include text_small;
+    color: $white-color;
+}
+
+.cardTitle4 {
+    padding-top: 18px;
+    padding-bottom: 9px;
+    @include h6;
+    color: #F67110;
+}
+
+.cardDescription4 {
+    @include text_small;
+    color: $white-color;
+}
+
+.cardTitle5 {
+    padding-top: 18px;
+    padding-bottom: 9px;
+    @include h6;
+    color: $tetriary-color;
+}
+
+.cardDescription5 {
+    @include text_small;
+    color: $white-color;
+}
+
+.cardTitle6 {
+    padding-top: 18px;
+    padding-bottom: 9px;
+    @include h6;
+    color: $primary-color;
+}
+
+.cardDescription6 {
+    @include text_small;
+    color: $white-color;
+}

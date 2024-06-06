@@ -1,0 +1,149 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.servicesFeaturesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white-color;
+    padding-bottom: 180px;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 108px 0 83px 0;
+    max-width: 566px;
+}
+
+.topTitle1 {
+    @include title_small;
+    color: $primary-color;
+}
+
+.topTitle2 {
+    @include h3;
+    color: $headers-color;
+    padding: 12px 0 23px 0;
+}
+
+.topDescription {
+    @include text_regularBold;
+    color: $headers-color;
+    text-align: center;
+}
+
+.botContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.subContainer1 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 120px;
+    padding-left: 147px;
+    padding-top: 113px;
+}
+
+.card1Title1 {
+    @include title_large;
+    color: $primary-color;
+}
+
+.card1Title2 {
+    @include h5;
+    color: $headers-color;
+    padding: 10px 0 18px 0;
+}
+
+.card1Description {
+    @include text_regular;
+    color: $main-text-color;
+}
+
+.subContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card2Color {
+    background-color: $primary-color;
+    height: 108px;
+    width: 607px;
+}
+
+.subContainer3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card3Color {
+    background-color: $tetriary-color;
+    height: 108px;
+    width: 607px;
+}
+
+.subContainer4 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 147px;
+    padding-left: 120px;
+    padding-top: 113px;
+}
+
+.card4Title1 {
+    @include title_large;
+    color: $tetriary-color;
+}
+
+.card4Title2 {
+    @include h5;
+    color: $headers-color;
+    padding: 10px 0 18px 0;
+}
+
+.card4Description {
+    @include text_regular;
+    color: $main-text-color;
+}
+
+.subContainer5 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 120px;
+    padding-left: 147px;
+    padding-top: 113px;
+}
+
+.card5Title1 {
+    @include title_large;
+    color: $secondary-100-color;
+}
+
+.card5Title2 {
+    @include h5;
+    color: $headers-color;
+    padding: 10px 0 18px 0;
+}
+
+.card5Description {
+    @include text_regular;
+    color: $main-text-color;
+}
+
+.subContainer6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card6Color {
+    background-color: $secondary-100-color;
+    height: 108px;
+    width: 607px;
+}

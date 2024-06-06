@@ -31,7 +31,7 @@ export default function AboutUsGreetingSection() {
                 
                 <span className={styles.description}>
 
-                    We build great business
+                    WE BUILD GREAT BUSINESS
 
                 </span>
 
