@@ -11,15 +11,29 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <HomeGreetingSection />
-      <HomeServicesSection />
-      <HomeBenefitsSection />
-      <HomeClientsSection />
-      <HomeActivitySection />
-      <HomeTestimonialsSection />
-      <NewsSection />
-      <Footer />
-    </main>
+    <>
+
+      <header>
+        <HomeGreetingSection />
+      </header>
+
+      <main>
+        
+        <HomeServicesSection />
+        <HomeBenefitsSection />
+        <HomeClientsSection />
+        <HomeActivitySection />
+        <HomeTestimonialsSection />
+        <NewsSection />
+
+      </main>
+
+      <footer>
+
+        <Footer />
+
+      </footer>
+    
+    </>
   );
 }

@@ -19,7 +19,7 @@ export default function Header() {
                 <div className={styles.phoneContainer}>
 
                     <Image 
-                        src='/icons/mphone.svg'
+                        src='/icons/mphone-purple.svg'
                         width={18}
                         height={28.8}
                         alt='phoneIcon'
@@ -32,10 +32,10 @@ export default function Header() {
                 </div>
 
                 <Image 
-                    src='/icons/burger-menu.svg'
+                    src='/icons/burger-menu-purple.svg'
                     width={27}
                     height={16}
-                    alt='burger-menu'
+                    alt='burger-menu-purple'
                 />
 
 

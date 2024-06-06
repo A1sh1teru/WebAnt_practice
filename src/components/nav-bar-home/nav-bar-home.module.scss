@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.navbarWrapper {
+    display: flex;
+    gap: 54px;
+}
+
+.navbarItem {
+    @include misc_nav;
+    color: $white-color;
+}
+
+.link {
+    color: $white-color;
+}

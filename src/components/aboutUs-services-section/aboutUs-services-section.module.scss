@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.homeServicesContainer {
+    padding: 143px 147px 178px 147px;
+    display: flex;
+    flex-direction: column;
+    color: $white-color;
+    position: relative;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    gap: 12px;
+}
+
+.topTitle {
+    @include title_small;
+    color: $primary-color;
+}
+
+.botTitle {
+    @include h5;
+    color: $headers-color;
+    padding-right: 539px;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    border-color: $primary-color;
+    padding: 54px 36px;
+}
+
+.cardTitle {
+    padding-top: 18px;
+    padding-bottom: 9px;
+    @include h6;
+    color: $headers-color;
+}
+
+.cardDescription {
+    @include text_small;
+    color: $main-text-color;
+}

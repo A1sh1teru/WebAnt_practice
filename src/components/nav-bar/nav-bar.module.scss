@@ -8,5 +8,9 @@
 
 .navbarItem {
     @include misc_nav;
-    color: $white-color;
+    color: $headers-color;
+}
+
+.link {
+    color: $headers-color;
 }

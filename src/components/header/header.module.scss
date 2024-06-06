@@ -5,15 +5,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 41px 120px 41px 147px;
 }
 
 .logoTitle {
-    color: $white-color;
     font-family: $font-mplus;
     font-size: 24px;
     font-weight: 900;
     line-height: 178%;
     letter-spacing: 2px;
+    color: $secondary-300-color;
 }
 
 .navbarContainer {
@@ -29,5 +30,5 @@
 
 .phoneText {
     @include misc_nav;
-    color: $white-color;
+    color: $headers-color;
 }

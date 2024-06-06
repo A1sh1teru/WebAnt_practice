@@ -1,0 +1,90 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.aboutUsFeaturesContainer {
+    background-color: $white-color;
+    position: relative;
+}
+
+.firstContainer {
+    background-color: $secondary-100-color;
+    padding: 108px 0 113px 147px;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstUpperTitle {
+    @include title_small;
+    color: $white-color;
+}
+
+.firstBotTitle {
+    @include h3;
+    color: $white-color;
+}
+
+.secondContainer {
+    display: flex;
+}
+
+.leftSecondSubContainer {
+    display: flex;
+    padding: 120px 103px 120px 147px;
+}
+
+.leftText {
+    @include h5;
+    color: $primary-color;
+}
+
+.rightSecondSubContainer {
+    display: flex;
+    background-color: $secondary-100-color;
+}
+
+.rightText {
+    @include text_regular;
+    color: $light-gray-color;
+    padding: 120px 539px 120px 98px;
+}
+
+.thirdContainer {
+    display: flex;
+}
+
+.leftThirdSubContainer {
+    display: flex;
+    padding: 120px 73px 120px 147px;
+}
+
+.rightThirdSubContainer {
+    display: flex;
+    background-color: $secondary-300-color;
+}
+
+.rightText2 {
+    @include text_regular;
+    color: $light-gray-color;
+    padding: 120px 539px 120px 128px;
+}
+
+.fourthContainer {
+    display: flex;
+}
+
+.leftFourthSubContainer {
+    display: flex;
+    padding: 120px 103px 120px 147px;
+}
+
+.rightFourthSubContainer {
+    display: flex;
+    background-color: $secondary-400-color;
+}
+
+.frontImage {
+    z-index: 1;
+    bottom: 0;
+    right: -49px;
+    position: absolute;
+}

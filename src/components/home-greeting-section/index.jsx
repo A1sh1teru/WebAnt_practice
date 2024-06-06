@@ -1,4 +1,4 @@
-import Header from "../header";
+import HeaderHome from "../header-home";
 import styles from './home-greeting-section.module.scss';
 import Image from "next/image";
 
@@ -19,7 +19,7 @@ export default function HomeGreetingSection() {
 
             <div className={styles.headerContainer}>
 
-                <Header />
+                <HeaderHome />
 
             </div>
 

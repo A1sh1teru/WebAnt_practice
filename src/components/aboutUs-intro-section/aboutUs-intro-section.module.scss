@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.aboutUsIntroContainer {
+    padding: 109px 0 113px 147px;
+    background-color: $white-color;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-right: 539px;
+}
+
+.topTitle {
+    @include title_small;
+    color: $primary-color;
+}
+
+.topDescription {
+    @include h5;
+    color: $headers-color;
+}
+
+.botContainer {
+    display: flex;
+    gap: 128px;
+    padding-right: 245px;
+}
+
+.leftSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.botLeftTitle {
+    @include h6;
+    color: $headers-color;
+}
+
+.botLeftDescription {
+    @include text_regular;
+    color: $main-text-color
+}
+
+.rightSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.botRightTitle {
+    @include h6;
+    color: $headers-color;
+}
+
+.botRightDescription {
+    @include text_regular;
+    color: $main-text-color
+}

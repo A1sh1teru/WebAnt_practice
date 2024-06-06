@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.aboutUsGreetingContainer {
+    position: relative;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 108px 0 108px 146px;
+    z-index: 1;
+    max-width: fit-content;
+}
+
+.title {
+    @include h2;
+    color: $primary-color;
+}
+
+.description {
+    @include title_large;
+    color: $light-gray-color;
+}

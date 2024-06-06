@@ -1,0 +1,85 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.homeTestimonialsContainer {
+    padding: 576px 147px 0 147px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+}
+
+.backImage {
+    position: absolute;
+    top: 126px;
+}
+
+.frontImage {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+.apostropheImage {
+    position: absolute;
+    z-index: 2;
+    top: 428.34px;
+}
+
+.topContainer {
+    display: flex;
+    gap: 158px;
+    align-items: center;
+}
+
+.topTextContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.topText {
+    @include quote_large;
+    color: $headers-color;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.arrowLeftContainer {
+    width: 36px;
+    height: 36px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 100px;
+}
+
+.arrowRightContainer {
+    width: 36px;
+    height: 36px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: $primary-color;
+    border-radius: 100px;
+}
+
+.botText {
+    @include text_regularBold;
+    color: $primary-color;
+}
+
+.dash {
+    @include text_regularBold;
+    color: $headers-color;
+}
+
+.textCompany {
+    @include text_regular;
+    color: $headers-color;
+}
