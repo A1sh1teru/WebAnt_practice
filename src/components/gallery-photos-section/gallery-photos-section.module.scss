@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.galleryPhotosContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.topContainer {
+    display: flex;
+}
+
+.topLeftSubContainer {
+    height: 774px;
+    width: 50%;
+    position: relative;
+}
+
+.topRightSubContainer {
+    width: 50%;
+    height: 774px;
+    position: relative;
+}
+
+.image2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.midContainer {
+    position: relative;
+    height: 774px;
+}
+
+.botContainer {
+    display: flex;
+    // justify-content: flex-end;
+}
+
+.botLeftSubContainer {
+    width: 50%;
+    height: 774px;
+    position: relative;
+}
+
+.botRightSubContainer {
+    height: 774px;
+    width: 50%;
+    position: relative;
+}
+
+.image5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}

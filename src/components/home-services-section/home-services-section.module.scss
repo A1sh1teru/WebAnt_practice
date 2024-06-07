@@ -18,6 +18,7 @@
 .topTitle {
     @include title_small;
     color: $primary-color;
+    padding-bottom: 18px;
 }
 
 .botTitle {

@@ -17,7 +17,7 @@ export default function AboutUsClientsSection() {
                 
                 <span className={styles.botText}>
 
-                What we do more than you can imagine, belive us.
+                    What we do more than you can imagine, belive us.
 
                 </span>
 

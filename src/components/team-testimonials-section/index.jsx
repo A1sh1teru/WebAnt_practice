@@ -1,11 +1,11 @@
-import styles from './services-testimonials-section.module.scss'
+import styles from './team-testimonials-section.module.scss'
 import Image from 'next/image'
 
-export default function ServicesTestimonialsSection() {
+export default function TeamTestimonialsSection() {
 
     return(
 
-        <section className={styles.servicesTestimonialsContainer}>
+        <section className={styles.homeTestimonialsContainer}>
 
             <div className={styles.frontImage}>
 

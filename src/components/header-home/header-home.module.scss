@@ -31,3 +31,12 @@
     @include misc_nav;
     color: $white-color;
 }
+
+.link {
+    color: $white-color;
+}
+
+.link:hover {
+    color: $primary-color;
+    transition: 0.3s;
+}

@@ -19,11 +19,13 @@
 .topText {
     @include title_small;
     color: $primary-color;
+    text-align: center;
 }
 
 .botText {
     @include h3;
     color: $headers-color;
+    text-align: center;
 }
 
 .logosContainer {

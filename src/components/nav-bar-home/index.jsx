@@ -20,7 +20,9 @@ export default function NavbarHome() {
                 </li>
 
                 <li className={styles.navbarItem}>
-                    Work
+
+                    <Link href='/team' className={styles.link}>Work</Link>
+                    
                 </li>
 
                 <li className={styles.navbarItem}>

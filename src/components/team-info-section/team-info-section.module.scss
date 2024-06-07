@@ -1,0 +1,94 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.teamInfoContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: $white-color;
+}
+
+.topContainerWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 558px;
+    text-align: center;
+    padding: 180px 0 163px 0;
+}
+
+.topText {
+    @include title_small;
+    color: $primary-color;
+}
+
+.midText {
+    @include h3;
+    color: $headers-color;
+    padding: 12px 0 23px 0;
+}
+
+.botText {
+    @include text_regularBold;
+    color: $headers-color;
+}
+
+.botContainer {
+    background-color: $secondary-400-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 324px;
+}
+
+.whiteContainer {
+    width: 100%;
+    height: 122px;
+    z-index: 3;
+    background-color: $white-color;
+    position: absolute;
+    top: 0;
+}
+
+.cardsContainer {
+    z-index: 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 126px;
+    grid-row-gap: 130px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.cardBotContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardTextName {
+    @include text_largeBold;
+    color: $white-color;
+}
+
+.cardTextProfession {
+    @include title_small;
+    color: $white-color;
+    opacity: 0.5;
+    padding-bottom: 10px;
+}
+
+.cardIconsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 41px;
+}

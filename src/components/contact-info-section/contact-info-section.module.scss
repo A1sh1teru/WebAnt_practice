@@ -1,0 +1,188 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.contactInfoContainer {
+    display: flex;
+    background-color: $secondary-300-color;
+    padding-bottom: 198px;
+    position: relative;
+}
+
+.leftContainer {
+    width: 50%;
+    padding-top: 144px;
+    padding-bottom: 660px;
+    background-color: $white-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.topText {
+    @include h5;
+    color: $headers-color;
+}
+
+.addressWrapperContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.addressContainer {
+    display: flex;
+    gap: 50px;
+}
+
+.addressTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.addressTitle {
+    @include title_large;
+    color: $headers-color;
+}
+
+.addressTextSubContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.addressText {
+    @include text_regular;
+    color: $main-text-color;
+}
+
+.contactWaysContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.waysTopSubContainer {
+    display: flex;
+    gap: 56px;
+}
+
+.mailText {
+    @include title_large;
+    color: $headers-color;
+}
+
+.waysBotSubContainer {
+    display: flex;
+    gap: 62px;
+}
+
+.phoneText {
+    @include title_large;
+    color: $headers-color;
+}
+
+.rightContainer {
+    width: 50%;
+    position: relative;
+}
+
+.inputsContainer {
+    position: absolute;
+    bottom: 0;
+    right: 147px;
+    left: 147px;
+    background-color: $secondary-400-color;
+    padding: 108px 98px 124px 98px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.inputsMainTitle {
+    @include h5;
+    color: $white-color;
+}
+
+.inputsSubContainer {
+    display: flex;
+    gap: 30px;
+}
+
+.leftInputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.leftTopInputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.leftTopInputsTitle {
+    @include title_small;
+    color: $white-color;
+}
+
+.leftTopInput {
+    width: 362px;
+    height: 54px;
+    padding: 24px 18px;
+}
+
+.leftBotInputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.leftBotInputsTitle {
+    @include title_small;
+    color: $white-color;
+}
+
+.leftBotInput {
+    width: 362px;
+    height: 54px;
+    padding: 24px 18px;
+}
+
+.rightInputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.rightInputsTopContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rightInputsTopTitle {
+    @include title_small;
+    color: $white-color;
+}
+
+.rightInput {
+    width: 558px;
+    height: 234px;
+    padding: 36px 54px;
+    text-align: center;
+    border: none;
+}
+
+.rightInputsBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 46px;
+    @include misc_text_button;
+    color: $white-color;
+    background-color: $primary-color;
+    max-width: 216px;
+    border-radius: 36px;
+}

@@ -2,7 +2,7 @@
 @import '../../styles/mixins.scss';
 
 .homeTestimonialsContainer {
-    padding: 576px 147px 0 147px;
+    padding: 576px 147px 140px 147px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -18,13 +18,13 @@
 .frontImage {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: -126px;
 }
 
 .apostropheImage {
     position: absolute;
     z-index: 2;
-    top: 428.34px;
+    top: 302.34px;
 }
 
 .topContainer {
@@ -42,6 +42,8 @@
     @include quote_large;
     color: $headers-color;
     max-width: fit-content;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 

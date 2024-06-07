@@ -1,6 +1,7 @@
 import styles from './header-home.module.scss'
 import Image from 'next/image'
 import NavbarHome from '../nav-bar-home'
+import Link from 'next/link'
 
 export default function HeaderHome() {
 
@@ -26,7 +27,7 @@ export default function HeaderHome() {
                     />
 
                     <span className={styles.phoneText}>
-                        (01) 666 - 693 - 456
+                        <Link href='/contact' className={styles.link}>(01) 666 - 693 - 456</Link>
                     </span>
 
                 </div>

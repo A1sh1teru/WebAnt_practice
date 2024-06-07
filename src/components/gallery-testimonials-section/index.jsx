@@ -1,16 +1,16 @@
-import styles from './services-testimonials-section.module.scss'
+import styles from './gallery-testimonials-section.module.scss'
 import Image from 'next/image'
 
-export default function ServicesTestimonialsSection() {
+export default function GalleryTestimonialsSection() {
 
     return(
 
-        <section className={styles.servicesTestimonialsContainer}>
+        <section className={styles.galleryTestimonialsContainer}>
 
             <div className={styles.frontImage}>
 
                 <Image 
-                    src='/img/services-avatar.svg'
+                    src='/img/aboutUs-avatar.svg'
                     width={460}
                     height={460}
                     alt='avatar'

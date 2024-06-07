@@ -30,13 +30,14 @@
 .topContainer {
     display: flex;
     gap: 158px;
-    align-items: center
+    text-align: center;
 }
 
 .topText {
     @include quote_large;
     color: $headers-color;
     max-width: fit-content;
+    text-align: center;
 }
 
 .arrowLeftContainer {

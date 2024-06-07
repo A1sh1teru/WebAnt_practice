@@ -1,8 +1,8 @@
-import styles from './footer.module.scss'
+import styles from './footer-contact.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Footer() {
+export default function FooterContact() {
 
     return(
 

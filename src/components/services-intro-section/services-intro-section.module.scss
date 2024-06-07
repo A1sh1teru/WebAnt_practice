@@ -36,6 +36,7 @@
 .topDescription {
     @include h5;
     color: $headers-color;
+    text-align: center;
 }
 
 .botContainer {
@@ -56,11 +57,13 @@
 .botLeftTitle {
     @include h1;
     color: $primary-color;
+    text-align: center;
 }
 
 .botLeftDescription {
     @include title_small;
     color: $white-color;
+    text-align: center;
 }
 
 .midSubContainer {
@@ -72,11 +75,13 @@
 .botMidTitle {
     @include h1;
     color: $secondary-100-color;
+    text-align: center;
 }
 
 .botMidDescription {
     @include title_small;
     color: $white-color;
+    text-align: center;
 }
 .rightSubContainer {
     display: flex;
@@ -87,9 +92,11 @@
 .botRightTitle {
     @include h1;
     color: $tetriary-color;
+    text-align: center
 }
 
 .botRightDescription {
     @include title_small;
     color: $white-color;
+    text-align: center;
 }

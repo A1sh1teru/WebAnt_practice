@@ -42,6 +42,7 @@
 .botTitle {
     @include text_regularBold;
     color: $white-color;
+    text-align: center;
 }
 
 .cardsContainer {

@@ -1,8 +1,8 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-.homeTestimonialsContainer {
-    padding: 576px 147px 140px 147px;
+.galleryTestimonialsContainer {
+    padding: 756px 147px 140px 147px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -12,19 +12,19 @@
 
 .backImage {
     position: absolute;
-    top: 126px;
+    top: 306px;
 }
 
 .frontImage {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 180px;
 }
 
 .apostropheImage {
     position: absolute;
     z-index: 2;
-    top: 428.34px;
+    top: 608.34px;
 }
 
 .topContainer {
@@ -44,6 +44,7 @@
     max-width: fit-content;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .arrowLeftContainer {
