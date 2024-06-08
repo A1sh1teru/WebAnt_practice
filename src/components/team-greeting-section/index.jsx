@@ -13,7 +13,7 @@ export default function TeamGreetingSection() {
         <section className={styles.teamGreetingContainer}>
 
             <Image 
-                src='/img/teambg.svg'
+                src='/img/teamBg.svg'
                 fill={true}
                 // objectFit='cover'
                 alt='bg-image'
