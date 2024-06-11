@@ -84,3 +84,58 @@
     @include text_regular;
     color: $headers-color;
 }
+
+@media (min-width: 360px) and (max-width: 1439px) {
+    .frontImage {
+        position: absolute;
+        z-index: 1;
+        top: 180px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .galleryTestimonialsContainer {
+        padding: 400px 30px 60px 30px;
+    }
+
+    .frontImage {
+        top: 60px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .apostropheImage {
+        top: 336.34px;
+        width: 52.25px;
+        height: 49.73px;
+    }
+
+    .backImage {
+        top: 102px;
+        width: 768px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .galleryTestimonialsContainer {
+        padding: 420px 30px 60px 30px;
+    }
+
+    .backImage {
+        top: 202px;
+        width: 560px;
+        height: 260px;
+    }
+
+    .topContainer {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+    .backImage {
+        top: 222px;
+        width: 360px;
+        height: 260px;
+    }
+}

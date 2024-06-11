@@ -81,24 +81,26 @@ export default function HomeBenefitsSection() {
 
             <div className={styles.rightSubContainer}>
 
-                <div className={styles.backImg}>
+                <div>
 
                     <Image
                         src='/img/benefits-back-img.jpg'
                         width={460}
                         height={522}
                         alt='back-img'
+                        className={styles.backImg}
                     />
 
                 </div>
 
-                <div className={styles.frontImg}>
+                <div>
 
                     <Image
                         src='/img/benefits-front-img.jpg'
                         width={362}
                         height={324}
                         alt='front-img'
+                        className={styles.frontImg}
                     />
 
                 </div>

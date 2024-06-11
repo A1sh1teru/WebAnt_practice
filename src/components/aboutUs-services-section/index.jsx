@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function AboutUsServicesSection() {
 
     return(
-        <section className={styles.homeServicesContainer}>
+        <section className={styles.aboutUsServicesContainer}>
 
             <div className={styles.titleContainer}>
                 

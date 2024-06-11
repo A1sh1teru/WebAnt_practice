@@ -23,3 +23,20 @@
     @include title_large;
     color: $light-gray-color;
 }
+
+@media (min-width: 360px) and (max-width: 768px) {
+
+    .servicesGreetingContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 60px 30px 60px 30px;
+    }
+}

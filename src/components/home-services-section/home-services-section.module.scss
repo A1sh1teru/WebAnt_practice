@@ -90,3 +90,56 @@
     bottom: 0;
     right: 147px;
 }
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .homeServicesContainer {
+        padding: 120px 100px 54px 100px; 
+    }
+
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 74px;
+        grid-row-gap: 64px;
+        padding-bottom: 118px;
+    }
+
+    .imageContainer {
+        right: 60px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .homeServicesContainer {
+        padding: 100px 30px 54px 30px; 
+    }
+
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 74px;
+        grid-row-gap: 64px;
+        padding-bottom: 100px;
+    }
+
+    .imageContainer {
+        display: none;
+    }
+
+    .quoteWrapper {
+        padding: 20px 20px 20px 20px;
+        border-radius: 14px;
+    }
+
+    .quoteContainer {
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .quoteAuthor {
+        padding: 0;
+    }
+
+}

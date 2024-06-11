@@ -63,3 +63,34 @@
     @include text_regular;
     color: $main-text-color
 }
+
+@media (min-width: 360px) and (max-width: 1439px) {
+    .topContainer {
+        padding-right: 239px;
+    }
+
+    .botContainer {
+        padding-right: 145px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .aboutUsIntroContainer{
+        padding: 30px 30px 100px 30px;
+    }
+
+    .topContainer {
+        padding-right: 0;
+    }
+
+    .botContainer {
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .botContainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

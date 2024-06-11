@@ -92,3 +92,29 @@
     justify-content: center;
     gap: 41px;
 }
+
+@media (min-width: 360px) and (max-width: 1126px) {
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 126px;
+        grid-row-gap: 130px;
+    }
+
+    .botContainer {
+        padding-bottom: 200px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .topContainer {
+        padding: 60px 30px 60px 30px;
+    }
+
+    .cardsContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 60px;
+    }
+}

@@ -5,7 +5,7 @@ export default function GalleryGreetingSection() {
 
     return(
 
-        <section className={styles.teamGreetingContainer}>
+        <section className={styles.galleryGreetingContainer}>
 
             <div className={styles.textContainer}>
 

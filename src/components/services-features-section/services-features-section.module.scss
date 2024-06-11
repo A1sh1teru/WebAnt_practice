@@ -147,3 +147,51 @@
     height: 108px;
     width: 607px;
 }
+
+@media (min-width: 360px) and (max-width: 1439px) {
+    .servicesFeaturesContainer {
+        padding-bottom: 100px;
+    }
+
+    .topContainer {
+        padding: 100px 30px;
+    }
+
+    .botContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .subContainer1 {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+
+    .subContainer2 {
+        display: none;
+    }
+
+    .subContainer3 {
+        display: none;
+    }
+
+    .subContainer4 {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+
+    .subContainer5 {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 0px;
+    }
+
+    .subContainer6 {
+        display: none;
+    }
+}

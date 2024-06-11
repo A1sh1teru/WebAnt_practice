@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-.homeServicesContainer {
+.aboutUsServicesContainer {
     padding: 143px 147px 178px 147px;
     display: flex;
     flex-direction: column;
@@ -53,4 +53,50 @@
 .cardDescription {
     @include text_small;
     color: $main-text-color;
+}
+
+@media (min-width: 360px) and (max-width: 1439px) {
+    .aboutUsServicesContainer {
+        padding: 143px 147px 178px 147px;
+    }
+
+    .botTitle {
+        @include h5;
+        color: $headers-color;
+        padding-right: 100px;
+    }
+
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .aboutUsServicesContainer {
+        padding: 60px 30px 60px 30px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .aboutUsServicesContainer {
+        padding: 60px 30px 60px 30px;
+    }
+
+    .botTitle {
+        @include h5;
+        color: $headers-color;
+        padding-right: 0px;
+    }
+
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+    }
 }

@@ -23,8 +23,6 @@
     flex-direction: column;
     align-items: center;
     gap: 18px;
-    // padding-right: 343px;
-    // padding-left: 196px;
     margin: 0 343px;
 }
 
@@ -99,4 +97,69 @@
     @include title_small;
     color: $white-color;
     text-align: center;
+}
+
+@media (min-width: 360px) and (max-width: 1244px) {
+    .botContainer {
+        gap: 60px;
+        top: 264px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1124px) {
+    .botContainer {
+        gap: 60px;
+        top: 296px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1052px) {
+    .botContainer {
+        gap: 60px;
+        top: 326px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .topContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        margin: 0 30px;
+    }
+
+    .botContainer {
+        gap: 60px;
+        top: 210px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 906px) {
+    .botContainer {
+        gap: 60px;
+        top: 236px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 618px) {
+    .botContainer {
+        flex-direction: column;
+        gap: 60px;
+        top: 266px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+    .botContainer {
+        gap: 60px;
+        top: 296px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+    .botContainer {
+        gap: 60px;
+        top: 326px;
+    }
 }

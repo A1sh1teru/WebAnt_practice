@@ -88,3 +88,56 @@
     right: -49px;
     position: absolute;
 }
+
+@media (min-width: 360px) and (max-width: 1439px) {
+    .frontImage {
+        display: none;
+    }
+
+    .leftSecondSubContainer {
+        padding: 120px 120px 120px 100px;
+    }
+    
+    .rightText2 {
+        padding: 120px 100px 120px 98px;
+    }
+
+    .leftThirdSubContainer {
+        padding: 120px 90px 120px 100px;
+    }
+
+    .leftFourthSubContainer {
+        padding: 120px 120px 120px 100px;
+    }
+    
+    .rightText {
+        padding: 120px 100px 120px 98px;
+    }
+    
+}
+@media (min-width: 360px) and (max-width: 768px) {
+    .firstContainer {
+        padding: 60px 30px 60px 30px;
+        align-items: center;
+    }
+
+    .leftSecondSubContainer {
+        padding: 60px 50px 60px 30px;
+    }
+    
+    .rightText2 {
+        padding: 60px 30px 60px 30px;
+    }
+
+    .leftThirdSubContainer {
+        padding: 60px 30px 60px 30px;
+    }
+    
+    .rightText {
+        padding: 60px 30px 60px 30px;
+    }
+
+    .leftFourthSubContainer {
+        padding: 60px 50px 60px 30px;
+    }
+}

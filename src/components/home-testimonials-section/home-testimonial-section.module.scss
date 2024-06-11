@@ -77,3 +77,54 @@
     @include text_regular;
     color: $headers-color;
 }
+
+@media (min-width: 360px) and (max-width: 1440px) {
+    .frontImage {
+        position: absolute;
+        z-index: 1;
+        top: -126px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .frontImage {
+        top: -126px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .apostropheImage {
+        top: 148.34px;
+        width: 52.25px;
+        height: 49.73px;
+    }
+
+    .backImage {
+        top: 42px;
+        width: 768px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .homeTestimonialsContainer {
+        padding: 300px 30px 60px 30px;
+    }
+
+    .backImage {
+        top: 42px;
+        width: 560px;
+        height: 260px;
+    }
+
+    .topContainer {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+    .backImage {
+        top: 42px;
+        width: 360px;
+        height: 260px;
+    }
+}

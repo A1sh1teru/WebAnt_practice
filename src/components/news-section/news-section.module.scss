@@ -21,11 +21,13 @@
 .title {
     @include h3;
     color: $headers-color;
+    text-align: center;
 }
 
 .description {
     @include h6;
     color: $main-text-color;
+    text-align: center;
 }
 
 .actionSubContainer {
@@ -59,4 +61,23 @@
     border: 1px solid;
     border-color: $primary-color;
     border-radius: 100px;
+}
+
+@media (min-width: 360px) and (max-width: 1440px) {
+    .homeNewsContainer {
+        padding: 126px 214px 141px 214px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .homeNewsContainer {
+        padding: 60px 30px 60px 30px;
+    }
+
+    .actionSubContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // padding: 0 46px;
+    }
 }

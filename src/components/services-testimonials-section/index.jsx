@@ -7,34 +7,37 @@ export default function ServicesTestimonialsSection() {
 
         <section className={styles.servicesTestimonialsContainer}>
 
-            <div className={styles.frontImage}>
+            {/* <div className={styles.frontImage}> */}
 
                 <Image 
                     src='/img/services-avatar.svg'
                     width={460}
                     height={460}
                     alt='avatar'
+                    className={styles.frontImage}
                 />
 
-            </div>
+            {/* </div> */}
 
-            <div className={styles.backImage}>
+            {/* <div className={styles.backImage}> */}
                 <Image 
                     src='/img/faces.svg'
                     width={1268}
                     height={349}
                     alt='faces'
+                    className={styles.backImage}
                 />
-            </div>
+            {/* </div> */}
 
-            <div className={styles.apostropheImage}>
+            {/* <div className={styles.apostropheImage}> */}
                 <Image 
                     src='/img/apostrophe.svg'
                     width={92.25}
                     height={79.73}
                     alt='apostrophe'
+                    className={styles.apostropheImage}
                 />
-            </div>
+            {/* </div> */}
 
             <div className={styles.topContainer}>
 

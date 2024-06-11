@@ -130,3 +130,49 @@
     @include text_small;
     color: $white-color;
 }
+
+@media (min-width: 360px) and (max-width: 1439px) {
+    .titleContainer {
+        text-align: center;
+        padding-bottom: 54px;
+        padding-top: 298px;
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 74px;
+        grid-row-gap: 64px;
+        padding: 0 30px 100px 30px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .titleContainer {
+        text-align: center;
+        padding-bottom: 54px;
+        padding-top: 298px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    // .cardsContainer {
+    //     display: grid;
+    //     grid-template-columns: repeat(1, 1fr);
+    //     grid-template-rows: repeat(6, 1fr);
+    //     grid-column-gap: 74px;
+    //     grid-row-gap: 64px;
+    //     padding: 0 150px 182px 150px;
+    // }
+}
+
+@media (min-width: 360px) and (max-width: 618px) {
+    .titleContainer {
+        padding-top: 598px;
+    }
+}

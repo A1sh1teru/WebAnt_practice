@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-.homeTestimonialsContainer {
+.aboutUsTestimonialsContainer {
     padding: 576px 147px 0 147px;
     display: flex;
     flex-direction: column;
@@ -81,4 +81,59 @@
 .textCompany {
     @include text_regular;
     color: $headers-color;
+}
+
+@media (min-width: 360px) and (max-width: 1440px) {
+    .frontImage {
+        position: absolute;
+        z-index: 1;
+        top: -126px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .aboutUsTestimonialsContainer {
+        padding: 340px 30px 60px 30px;
+    }
+
+    .frontImage {
+        top: 0px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .apostropheImage {
+        top: 276.34px;
+        width: 52.25px;
+        height: 49.73px;
+    }
+
+    .backImage {
+        top: 42px;
+        width: 768px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .aboutUsTestimonialsContainer {
+        padding: 340px 30px 60px 30px;
+    }
+
+    .backImage {
+        top: 142px;
+        width: 560px;
+        height: 260px;
+    }
+
+    .topContainer {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+    .backImage {
+        top: 162px;
+        width: 360px;
+        height: 260px;
+    }
 }

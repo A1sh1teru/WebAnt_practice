@@ -128,7 +128,8 @@
 }
 
 .leftTopInput {
-    width: 362px;
+    max-width: 362px;
+    min-width: 300px;
     height: 54px;
     padding: 24px 18px;
 }
@@ -145,7 +146,8 @@
 }
 
 .leftBotInput {
-    width: 362px;
+    max-width: 362px;
+    min-width: 300px;
     height: 54px;
     padding: 24px 18px;
 }
@@ -168,7 +170,8 @@
 }
 
 .rightInput {
-    width: 558px;
+    max-width: 558px;
+    min-width: 300px;
     height: 234px;
     padding: 36px 54px;
     text-align: center;
@@ -185,4 +188,43 @@
     background-color: $primary-color;
     max-width: 216px;
     border-radius: 36px;
+}
+
+@media (min-width: 360px) and (max-width: 1439px) {
+    .inputsSubContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .leftContainer {
+        width: 50%;
+        padding-top: 144px;
+        padding-bottom: 860px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .rightContainer {
+        display: none;
+    }
+
+    .leftContainer {
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 780px;
+    }
+
+    .inputsContainer {
+        right: 0px;
+        left: 0px;
+        background-color: $secondary-400-color;
+        padding: 60px 30px 100px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        min-width: 360px;
+    }
 }

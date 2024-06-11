@@ -174,3 +174,53 @@
     color: $primary-color;
     transition: 0.3s;
 }
+
+@media (min-width: 360px) and (max-width: 1440px) {
+    .footerSection {
+        padding: 60px 60px 60px 60px;
+        gap: 64px;
+    }
+
+    .topContainer {
+        gap: 60px;
+    }
+
+    .menuAndServicesContainer {
+        display: flex;
+        gap: 30px;
+    }
+
+    .navSubContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .footerSection {
+        padding: 60px 30px 60px 30px;
+        gap: 64px;
+    }
+
+    .topContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .footerSection {
+        padding: 60px 30px 60px 30px;
+        gap: 64px;
+        align-items: center;
+    }
+
+    .navSubContainer {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        gap: 64px;
+    }
+}

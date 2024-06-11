@@ -88,3 +88,54 @@
     left: 0;
     bottom: 0;
 }
+
+@media (min-width: 360px) and (max-width: 1440px) {
+    .homeBenefitsContainer {
+        gap: 20px;
+    }
+
+    .backImg {
+        padding-left: 20px;
+        width:  360px;
+        height: 422px;
+    }
+
+    .frontImg {
+        width: 262px;
+        height: 224px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .homeBenefitsContainer {
+        gap: 20px;
+        padding: 80px 100px 80px 100px;
+    }
+
+    .backImg {
+        padding-left: 20px;
+        width:  300px;
+        height: 360px;
+    }
+
+    .frontImg {
+        padding-left: 20px;
+        width: 300px;
+        height: 360px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .homeBenefitsContainer {
+        gap: 0px;
+        padding: 80px 30px 80px 30px;
+    }
+
+    .backImg {
+        display: none;
+    }
+
+    .frontImg {
+        display: none;
+    }
+}

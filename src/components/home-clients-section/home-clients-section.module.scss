@@ -75,3 +75,65 @@
     @include text_regular;
     color: $white-color;
 }
+
+@media (min-width: 360px) and (max-width: 1440px) {
+    .homeClientsContainer {
+        padding: 0 100px 144px 100px;
+        gap: 60px;
+    }
+
+    .logosContainer {
+        margin-left: 0;
+        margin-bottom: 600px;
+    }
+
+    .logosTitle {
+        padding: 0;
+    }
+
+    .logosImages {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 128px;
+        grid-row-gap: 110px;
+    }
+
+    .leftTextContainer {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 100px 40px 100px 40px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .homeClientsContainer {
+        padding: 0 30px 144px 30px;
+        gap: 60px;
+    }
+
+    .logosContainer {
+        margin-left: 0;
+        margin-bottom: 500px;
+    }
+
+    .logosImages {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 128px;
+        grid-row-gap: 60px;
+    }
+
+    .leftTextContainer {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 100px 40px 100px 40px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 550px) {
+    .logosContainer {
+        margin-bottom: 740px;
+    }
+}
