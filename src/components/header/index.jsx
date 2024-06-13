@@ -4,68 +4,35 @@ import styles from './header.module.scss'
 import Navbar from '../nav-bar'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react';
-
-// export default function Header() {
-
-//     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//     const toggleMenu = () => {
-//         setIsMenuOpen(!isMenuOpen);
-//     };
-
-//     return(
-//         <header className={styles.headerContainer}>
-//             <div className={styles.logoContainer}>
-//                 <span className={styles.logoTitle}>
-//                     Lopper
-//                 </span>
-//             </div>
-
-//             <div className={`${styles.navbarContainer} ${isMenuOpen ? styles.open : ''}`}>
-
-//                 <Navbar />
-
-//                     <div className={styles.phoneContainer}>
-
-//                         <Image 
-//                             src='/icons/mphone-purple.svg'
-//                             width={18}
-//                             height={28.8}
-//                             alt='phoneIcon'
-//                         />
-
-//                         <span className={styles.phoneText}>
-
-//                             <Link href='/contact' className={styles.link}>(01) 666 - 693 - 456</Link>
-
-//                         </span>
-
-//                     </div>
-
-//             </div>
-
-//             <Image 
-//                 src='/icons/burger-menu-purple.svg'
-//                 width={27}
-//                 height={16}
-//                 alt='burger-menu-purple'
-//                 className={styles.burgerMenu}
-//                 onClick={toggleMenu}
-//             />
-
-//         </header>
-//     )
-
-// }
+import { useState, useRef, useEffect } from 'react';
+import NavbarHome from '../nav-bar-home'
 
 export default function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef(null);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    const handleClickOutside = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+            setIsMenuOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isMenuOpen]);
 
     return(
         <header className={styles.headerContainer}>
@@ -99,7 +66,7 @@ export default function Header() {
             </div>
 
             <Image 
-                src={isMenuOpen ? '/icons/close-icon.svg' : '/icons/burger-menu-purple.svg'}
+                src='/icons/burger-menu-purple.svg'
                 width={27}
                 height={16}
                 alt='burger-menu-purple'
@@ -108,17 +75,17 @@ export default function Header() {
             />
 
             {isMenuOpen && (
-                <div className={styles.mobileMenu}>
-                    <Navbar />
+                <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`} ref={menuRef}>
+                    <NavbarHome />
                     <div className={styles.phoneContainer}>
                         <Image 
-                            src='/icons/mphone-purple.svg'
+                            src='/icons/mphone.svg'
                             width={18}
                             height={28.8}
                             alt='phoneIcon'
                         />
                         <span className={styles.phoneText}>
-                            <Link href='/contact' className={styles.link}>(01) 666 - 693 - 456</Link>
+                            <Link href='/contact' className={styles.link2}>(01) 666 - 693 - 456</Link>
                         </span>
                     </div>
                 </div>
